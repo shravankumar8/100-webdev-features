@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aqua;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+.wrapper .loader{
+    display: flex;
+    justify-content: space-between;
+    padding:  0 20px;
+    width: 300px;
+}
+.loader .loading{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(0, 0, 0);
+    animation: load 0.8s ease infinite;
+    }
+
+    .loader  .one{
+        animation-delay: 0.4s;
+    }
+    .loader  .two{
+        animation-delay: 0.5s;
+    }
+    .loader  .three{
+        animation-delay: 0.6s;
+    }
+    .loader  .four{
+        animation-delay: 0.7s;
+    }
+
+
+    @keyframes load{
+        0%{
+            width: 40px;
+            height: 40px;
+        }
+        25%{
+            width: 45px;
+            height: 45px;
+        }
+        50%{
+            width: 30px;
+            height: 30px;
+        }
+        75%{
+            width: 35px;
+            height: 35px;
+        }
+    }
